@@ -1,0 +1,25 @@
+GET http://localhost:8080/api/tasks
+###
+POST http://localhost:8080/api/tasks
+Content-Type: application/json
+
+{
+    "taskID" : 101,
+    "taskName": "Solve leetcode",
+    "description": "Solve one leetcode problem daily",
+    "taskStatus": false
+}
+###
+GET http://localhost:8080/api/tasks/102
+###
+PUT http://localhost:8080/api/tasks/101
+Content-Type: application/json
+
+{
+    "taskID" : 101,
+    "taskName": "Solve hackerrank",
+    "description": "Solve one hackerrank problem daily",
+    "taskStatus": true
+}
+###
+DELETE http://localhost:8080/api/tasks/101
